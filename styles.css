@@ -28,6 +28,7 @@ body, html {
   position: absolute;
   top: 0;
   left: 0;
+  scrollbar-width: none;
   animation: changeColor 6s ease-in-out infinite, startupAnimation 2s ease-out forwards;
 }
   
@@ -82,8 +83,8 @@ body, html {
 {
   background-color: rgb(5, 0, 74);
   width: 380px;
-  height: 760px;
-  margin: 30px 0px;
+  height: 700px;
+  margin: 30px 15px;
   box-sizing: border-box;
   border-radius: 20px;
 }
@@ -94,9 +95,6 @@ body, html {
 }
 .cardTitle1
 {
-
-  color: thistle;
-  font-size: 25px;
   text-align: center;
   padding: 10px 5px;
   font-weight: bold;
@@ -176,6 +174,7 @@ body, html {
 @media (max-width: 870px) {
 .projects {
   width: auto; /* Or you can use a percentage like 80% or 100% depending on the desired layout */
+  margin: 15px;
 }
 }
 .accordion-accordion-flush {
@@ -184,7 +183,7 @@ body, html {
   --bs-accordion-transition: color 0.15s ease-in-out,background-color 0.15s ease-in-out,border-color 0.15s ease-in-out,box-shadow 0.15s ease-in-out,border-radius 0.15s ease;
   --bs-accordion-border-color: #004f9f;
   --bs-accordion-border-width: var(--bs-border-width);
-  --bs-accordion-border-radius: var(--bs-border-radius);
+  --bs-accordion-border-radius: 20px;
   --bs-accordion-inner-border-radius: calc(var(--bs-border-radius) - (var(--bs-border-width)));
   --bs-accordion-btn-padding-x: 1.25rem;
   --bs-accordion-btn-padding-y: 1rem;
@@ -222,6 +221,27 @@ body, html {
   overflow-anchor: none;
   transition: var(--bs-accordion-transition);
 }
+
+
+.accordion-item1:not(:first-of-type) {
+  border-top: 0;
+}
+
+.accordion-item1 {
+  color: var(--bs-accordion-color);
+  background-color: var(--bs-accordion-bg);
+  border: var(--bs-accordion-border-width) solid var(--bs-accordion-border-color);
+}
+*, ::after, ::before {
+  box-sizing: border-box;
+}
+
+
+
+
+
+
+
 #ai {
   width: 600px;
   border-radius: 20px;

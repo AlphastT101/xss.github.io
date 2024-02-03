@@ -199,7 +199,7 @@
         <div class="accordion-accordion-flush" id="accordionFlushExample">
             <div class="accordion-item">
             <h2 class="accordion-header">
-                <button class="accordion-buttons collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne" style="color: aqua;">
+                <button class="accordion-buttons collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne" style="color: aqua; border-radius: 20px;">
                 Auto rejector
                 </button>
             </h2>
@@ -228,9 +228,9 @@
                 <div class="accordion-body" style="color: aqua; text-align: center; ">An "AIML-chatbot" refers to an Artificial Intelligence Markup Language (AIML) based chatbot. It utilizes AIML, an XML-based language, to define patterns and responses for interacting with users. This chatbot interprets and generates human-like responses, making it a powerful tool for natural language processing in various applications. <hr> <br>Used Languages: <br> Python 3.11 <br> AIML 0.9.2<br></div>
             </div>
             </div>
-            <div class="accordion-item">
+            <div class="accordion-item1" style="border-bottom-left-radius:20px; border-bottom-right-radius: 20px;">
                 <h2 class="accordion-header">
-                    <button class="accordion-buttons collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseFour" style="color: aqua;">
+                    <button class="accordion-buttons collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseFour" style="color: aqua; border-radius: 20px;">
                     My portfolio
                     </button>
                 </h2>
@@ -282,10 +282,10 @@
         <div class="row">
             <div class="col-lg-6 mx-auto my-3 text-center" id="contact-info">
                 <div class="contact-info-head" style="color: aqua; font-size: 25px; padding: 10px; font-family: Georgia, 'Times New Roman', Times, serif;">
-                    <p><i class="fa-solid fa-address-book" style="margin-top: 20px;"></i> Contact information</p>
+                    <p><i class="fa-solid fa-address-book"></i> Contact information</p>
                 </div>
-                <br><br><br><br>
-                <div class="contact-decs" style="font-size: 19px; font-family: 'Times New Roman', Times, serif;">
+                <br><br><br>
+                <div class="contact-decs" style="font-size: 19px; font-family:Monospace;">
                     <h5><i class="fa-solid fa-location-dot"></i> California, USA</h5>
                     <h5><i class="fa-solid fa-envelope"></i> anlexalphast@gmail.com</h5>
                     <h5><i class="fa-brands fa-discord"></i> alphast101</h5>
@@ -297,32 +297,32 @@
                 </div>
             </div>
       
-          <div class="col-lg-6 mx-auto my-3 text-center" id="contact-me">
-            <div class="contact-info-head" style="color: aqua; font-size: 25px; padding: 10px; font-family: Georgia, 'Times New Roman', Times, serif;">
-              <p><i class="fa-solid fa-address-book" style="margin-top: 20px;"></i> Contact me</p>
+            <div class="col-lg-6 mx-auto my-3 text-center" id="contact-me">
+                <div class="contact-info-head" style="color: aqua; font-size: 25px; padding: 10px; font-family: Georgia, 'Times New Roman', Times, serif;">
+                <p><i class="fa-solid fa-address-book"></i> Contact me</p>
+                </div>
+                <form action="mailto:anlexalphast@gmail.com" method="post" enctype="text/plain">
+                    <div class="mb-3">
+                        <label for="name" class="form-label">Name</label>
+                        <input type="text" class="form-control" id="name" name="name" placeholder="Enter your name" required style="background-color: rgb(39, 58, 110); color: aqua;">
+                    </div>
+                    
+                    <div class="mb-3">
+                        <label for="email" class="form-label">Email</label>
+                        <input type="email" class="form-control" id="email" name="email" placeholder="Enter your Email" required style="background-color: rgb(39, 58, 110); color: aqua;">
+                    </div>
+                    
+                    <div class="mb-3">
+                        <label for="message" class="form-label">Message</label>
+                        <textarea class="form-control" id="message" name="message" placeholder="Enter your message" rows="7" required style="background-color: rgb(39, 58, 110); color: aqua; resize: none;"></textarea>
+                    </div>
+                    
+                    <div class="mb-3">
+                        <button type="submit" class="btn btn-outline-success">Submit</button>
+                        <button type="reset" class="btn btn-outline-danger" style="margin-left: 15px;">Reset</button>
+                    </div>
+                </form>
             </div>
-            <form action="mailto:anlexalphast@gmail.com" method="post" enctype="text/plain">
-                <div class="mb-3">
-                    <label for="name" class="form-label">Name</label>
-                    <input type="text" class="form-control" id="name" name="name" placeholder="Enter your name" required style="background-color: rgb(39, 58, 110); color: aqua;">
-                </div>
-                
-                <div class="mb-3">
-                    <label for="email" class="form-label">Email</label>
-                    <input type="email" class="form-control" id="email" name="email" placeholder="Enter your Email" required style="background-color: rgb(39, 58, 110); color: aqua;">
-                </div>
-                
-                <div class="mb-3">
-                    <label for="message" class="form-label">Message</label>
-                    <textarea class="form-control" id="message" name="message" placeholder="Enter your message" rows="7" required style="background-color: rgb(39, 58, 110); color: aqua; resize: none;"></textarea>
-                </div>
-                
-                <div class="mb-3">
-                    <button type="submit" class="btn btn-outline-success">Submit</button>
-                    <button type="reset" class="btn btn-outline-danger" style="margin-left: 15px;">Reset</button>
-                </div>
-            </form>
-          </div>
         </div>
     </div><br>
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
