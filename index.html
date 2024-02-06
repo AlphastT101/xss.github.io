@@ -10,6 +10,18 @@
 
 
 <body>
+    <nav class="navbar navbar-dark bg-dark fixed-top" style="padding: 0px;">
+        <div class="container-fluid" style="background: linear-gradient(-45deg, #370000, #000428, #291008, #000848);">
+          <a class="navbar-brand rounded-icon" href="#" style="color: aqua;">
+            <img src="https://cdn.discordapp.com/avatars/1026388699203772477/8964c60e7cd3dd4b919811e566e5ccb7.webp?size=80" alt="Custom Icon" style="border-radius: 50%; width: 50px; height: 50px; margin-right: 15px;">
+            AlphasT101
+          </a>
+          <label class="switch">
+            <input type="checkbox">
+            <span class="slider round" style="font-size: 13px; color: aqua; padding-bottom: 47px; padding-left: 4.5px;">Japanese/English</span>
+          </label>
+        </div>
+      </nav>
     
     <div id="pfp_and_and_name">
         <img id="pfp" src="pfp.png" alt="My Profile Picture">
@@ -17,21 +29,28 @@
         <p id="namee">AlphasT101</p>
         <br>
         <br>
-        <p id="legend"><i class="fa-brands fa-discord"></i> Moderator - <a href="https://discord.gg/BnSw8dh5ep" target="_blank">Reichtangle</a></p>
-        <p id="legend"><i class="fa-brands fa-discord"></i> Admin - <a href="https://discord.gg/X2wvZ6hRGF" target="_blank">J.kingdom</a></p>
-        <p id="legend"><i class="fa-brands fa-discord"></i> Owner of - <a href="https://discord.com/oauth2/authorize?client_id=1110111253256482826&permissions=3025808252417&response_type=code&redirect_uri=https%3A%2F%2Fdiscordapp.com%2Foauth2%2Fauthorize%3F%26client_id%3D1110111253256482826%26scope%3Dbot&scope=bot+guilds" target="_blank">LuminaryAI</a></p>
+        <p id="legend_japan_r"><i class="fa-brands fa-discord"></i> モデレータ - <a href="https://discord.gg/BnSw8dh5ep" target="_blank">Reichtangle</a></p>
+        <p id="legend_japan_j"><i class="fa-brands fa-discord"></i> 管理者 - <a href="https://discord.gg/X2wvZ6hRGF" target="_blank">J.kingdom</a></p>
+        <p id="legend_japan_l"><i class="fa-brands fa-discord"></i> 所有者 - <a href="https://discord.com/oauth2/authorize?client_id=1110111253256482826&permissions=3025808252417&response_type=code&redirect_uri=https%3A%2F%2Fdiscordapp.com%2Foauth2%2Fauthorize%3F%26client_id%3D1110111253256482826%26scope%3Dbot&scope=bot+guilds" target="_blank">LuminaryAI</a></p>
+
+        <p id="legend_english_r" style="display: none;"><i class="fa-brands fa-discord"></i> Moderator - <a href="https://discord.gg/BnSw8dh5ep" target="_blank">Reichtangle</a></p>
+        <p id="legend_english_j" style="display: none;"><i class="fa-brands fa-discord"></i> Admin - <a href="https://discord.gg/X2wvZ6hRGF" target="_blank">J.kingdom</a></p>
+        <p id="legend_english_l" style="display: none;"><i class="fa-brands fa-discord"></i> Owner of - <a href="https://discord.com/oauth2/authorize?client_id=1110111253256482826&permissions=3025808252417&response_type=code&redirect_uri=https%3A%2F%2Fdiscordapp.com%2Foauth2%2Fauthorize%3F%26client_id%3D1110111253256482826%26scope%3Dbot&scope=bot+guilds" target="_blank">LuminaryAI</a></p>
         <br>
-        <p id="bio">I am a passionate self-taught coder, specializing in Python as my primary language. Enthusiastic about the intricacies of coding, I thrive in the world of artificial intelligence. Constantly exploring and innovating, my journey is defined by a love for coding and a commitment to the ever-evolving landscape of technology.</p>
+        <p id="bio_english" style="display: none;">I am a passionate self-taught coder, specializing in Python as my primary language. Enthusiastic about the intricacies of coding, I thrive in the world of artificial intelligence. Constantly exploring and innovating, my journey is defined by a love for coding and a commitment to the ever-evolving landscape of technology.</p>
+        <p id="bio_japan">私は独学の熱心なコーダーで、Pythonを第一言語としています。コーディングの複雑さに熱心な私は、人工知能の世界で活躍しています。常に探求と革新を続ける私の旅は、コーディングへの愛情と、進化し続けるテクノロジーの風景へのコミットメントによって定義されています。</p>
     </div>
     <div id="cardContainer" class="cardContainer col-lg-12">
         <div id="skillsCard1" class="card1">
             <div class="cardBody1">
                 <div id= "cardTitle1" class="cardTitle1" style="color: aqua; font-size: 25px;">
-                    <i class="fa-solid fa-bolt"></i> Skills
+                    <p id="skills_english" style="display: none;"><i class="fa-solid fa-bolt"></i> Skills</p>
+                    <p id="skills_japan"><i class="fa-solid fa-bolt"></i> スキル</p>
                 </div>
                 <div class="cardDesc1">
                     <ul>
-                        <li><strong style="color: aqua; font-size: 20px;"><i class="fa-solid fa-code"></i> Programming Language</strong></li>
+                        <li id="program_lang_english" style="display: none;"><strong style="color: aqua; font-size: 20px;"><i class="fa-solid fa-code"></i> Programming Language</strong></li>
+                        <li id="program_lang_japan"><strong style="color: aqua; font-size: 20px;"><i class="fa-solid fa-code"></i> プログラミング言語</strong></li>
                         <table class="skillsTable">
                             <tr>
                                 <td class="skillNames1" style="color: aqua; font-size: 15px;">Python:</td>
@@ -61,7 +80,8 @@
 
 
                         <hr>
-                        <li><strong style="color: aqua; font-size: 20px;"><i class="fa-solid fa-layer-group"></i> Web Development</strong></li>
+                        <li id="web_english" style="display: none;"><strong style="color: aqua; font-size: 20px;"><i class="fa-solid fa-layer-group"></i> Web Development</strong></li>
+                        <li id="web_japan"><strong style="color: aqua; font-size: 20px;"><i class="fa-solid fa-layer-group"></i> ウェブ開発</strong></li>
                         <table class="skillsTable">
                             <tr>
                                 <td class="skillNames1" style="color: aqua; font-size: 15px;">HTML5:</td>
@@ -126,7 +146,8 @@
                             </tr>
                         </table>
                         <hr>
-                        <li><strong style="color: aqua; font-size: 20px;"><i class="fa-brands fa-bots"></i> Discord bots</strong></li>
+                        <li id="discord_english" style="display: none;"><strong style="color: aqua; font-size: 20px;"><i class="fa-brands fa-bots"></i> Discord bots</strong></li>
+                        <li id="discord_japan"><strong style="color: aqua; font-size: 20px;"><i class="fa-brands fa-bots"></i> Discord ボット</strong></li>
                         <table class="skillsTable">
                             <tr>
                                 <td class="skillNames1" style="color: aqua; font-size: 15px;">discord.py:</td>
@@ -138,7 +159,8 @@
                             </tr>
                         </table>
                         <hr>
-                        <li><strong style="color: aqua; font-size: 20px;"><i class="fa-solid fa-feather-pointed"></i> Other</strong></li>
+                        <li id="other_english" style="display: none;"><strong style="color: aqua; font-size: 20px;"><i class="fa-solid fa-feather-pointed"></i> Other</strong></li>
+                        <li id="other_japan"><strong style="color: aqua; font-size: 20px;"><i class="fa-solid fa-feather-pointed"></i> その他</strong></li>
                         <table class="skillsTable">
                             <tr>
                                 <td class="skillNames1" style="color: aqua; font-size: 15px;">Cybersecurity:</td>
@@ -164,23 +186,29 @@
         <div class="card1">
             <div class="cardBody1">
                 <div id= "cardTitle1" class="cardTitle1" style="color: aqua; font-size: 25px;">
-                    <i class="fa-solid fa-code"></i> Additional Skill
+                    <p id="additional_english" style="display: none;"><i class="fa-solid fa-code"></i> Additional Skills</p>
+                    <p id="additional_japan"><i class="fa-solid fa-code"></i> 追加スキル</p>
                 </div>
                 <div class="cardDesc1">
                     <ul>
-                        <li><strong style="color: aqua; font-size: 20px;">Languages</strong></li>
-                            <p style="color: aqua; font-size: 15px;">English<br></p>
+                        <li id="languages_english" style="display: none;"><strong style="color: aqua; font-size: 20px;">Languages</strong></li>
+                        <li id="languages_japan"><strong style="color: aqua; font-size: 20px;">言語</strong></li>
+                            <p style="color: aqua; font-size: 15px;">English<br>日本<br></p>
                         <hr>
-                        <li><strong style="color: aqua; font-size: 20px ;">Software and Tools</strong></li>
+                        <li id="software_english" style="display: none;"><strong style="color: aqua; font-size: 20px ;">Software and Tools</strong></li>
+                        <li id="software_japan"><strong style="color: aqua; font-size: 20px ;">ソフトウェアとツール</strong></li>
                             <p style="color: aqua; font-size: 15px;">VMware 17 pro<br>
                             Github<br>
                             VS Code</p>
                         <hr>
-                        <li><strong style="color: aqua; font-size: 20px;">Misc.</strong></li>
+                        <li id="misc_english" style="display: none;"><strong style="color: aqua; font-size: 20px;">Misc.</strong></li>
+                        <li id="misc_japan"><strong style="color: aqua; font-size: 20px;">雑</strong></li>
                             <p style="color: aqua; font-size: 15px;">LaTeX<br>
                             Google Workspace<br>
                             Libraries (e.g. colorama, openai)</p>
-                        <li><strong style="color: aqua; font-size: 20px;">Other</strong></li>
+
+                        <li id="additional_other_english" style="display: none;"><strong style="color: aqua; font-size: 20px;">Other</strong></li>
+                        <li id="additional_other_japan"><strong style="color: aqua; font-size: 20px;">その他</strong></li>
                             <p style="color: aqua; font-size: 15px;">virual box<br>
                             Adobe premier<br>
                             Kali linux<br>
@@ -195,57 +223,79 @@
         </div>
     </div>
     <div class="projects">
-        <div class="projects_head" style="color: aqua; text-align: center; font-size: 25px; font-family: Georgia, 'Times New Roman', Times, serif;"><i class="fa-solid fa-bolt"></i> Projects</div><br><br>
+        <div class="projects_head" style="color: aqua; text-align: center; font-size: 25px; font-family: Georgia, 'Times New Roman', Times, serif;">
+            <p id="projects_english" style="display: none;"><i class="fa-solid fa-bolt"></i> Projects</p>
+            <p id="projects_japan"><i class="fa-solid fa-bolt"></i> プロジェクト</p>
+        </div><br><br>
         <div class="accordion-accordion-flush" id="accordionFlushExample">
             <div class="accordion-item">
             <h2 class="accordion-header">
                 <button class="accordion-buttons collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne" style="color: aqua; border-radius: 20px;">
-                Auto rejector
+                <p id="auto_rejector_english" style="display: none;">Auto rejector</p>
+                <p id="auto_rejector_japan">自動リジェクタ</p>
                 </button>
             </h2>
             <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
-                <div class="accordion-body" style="color: aqua; text-align: center; ">An "auto-rejector" in a Python project is a component or feature that automatically declines or denies certain requests, inputs, or conditions based on predefined criteria. It facilitates automated decision-making, enhancing efficiency and enforcing specific rules within the project's functionality. <hr> <br>Used Languages: <br> Python 3.11 <br></div>
+                <div class="accordion-body" style="color: aqua; text-align: center; ">
+                    <p id="desc_reject_english" style="display: none;">An "auto-rejector" in a Python project is a component or feature that automatically declines or denies certain requests, inputs, or conditions based on predefined criteria. It facilitates automated decision-making, enhancing efficiency and enforcing specific rules within the project's functionality. <br> Used Languages: Python 3.11</p>
+                    <p id="desc_reject_japan">Python プロジェクトの "自動拒否者" は、事前定義された条件に基づいて、特定の要求、入力、または条件を自動的に拒否または拒否するコンポーネントまたは機能です。自動化された意思決定を容易にし、効率を高め、プロジェクトの機能内で特定のルールを適用します。<br><br>使用プログラミング言語:<br> python 3.11</p>
+                </div>
             </div>
             </div>
             <div class="accordion-item">
             <h2 class="accordion-header">
                 <button class="accordion-buttons collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo" style="color: aqua;">
-                LuminaryAI - Discord bot
+                <p id="luminaryai_english" style="display: none;">LuminaryAI - Discord AI bot</p>
+                <p id="luminaryai_japan">LuminaryAI - Discord AIボット</p>
                 </button>
             </h2>
             <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
-                <div class="accordion-body" style="color: aqua; text-align: center; ">LuminaryAI is an artificial intelligence designed to generate precise answers and create clear, detailed images. It harnesses advanced algorithms to assist users in visualizing concepts and answering queries with accuracy and creativity. As an AI, LuminaryAI combines the love of learning with the ability to illustrate ideas, making information both accessible and engaging. <hr> <br>Used Tools & Languages: <br> Python<br>Shapes.inc (custom) <br>discord.py<br><br><hr> Current users: 3000+<br><hr> LuminaryAI generated image:</div>
+                <div class="accordion-body" style="color: aqua; text-align: center; ">
+                    <p id="desc_luminaryai_english" style="display: none;">LuminaryAI is an artificial intelligence designed to generate precise answers and create clear, detailed images. It harnesses advanced algorithms to assist users in visualizing concepts and answering queries with accuracy and creativity. As an AI, LuminaryAI combines the love of learning with the ability to illustrate ideas, making information both accessible and engaging.<br>Used Tools & Languages: <br> Python<br>Shapes.inc<br>discord.py<br><br>Current users: 3000+<br>LuminaryAI generated image:</p>
+                    <p id="desc_luminaryai_japan">LuminaryAIは、正確な回答を生成し、鮮明で詳細な画像を作成するように設計された人工知能です。高度なアルゴリズムを利用して、ユーザーが概念を視覚化し、正確かつ創造性を持ってクエリに回答できるように支援します。AIとして、LuminaryAIは学習への愛情とアイデアを説明する能力を組み合わせ、情報にアクセスしやすく魅力的なものにします。<br><br>使用ツールと言語:<br>Python 3.11<br>Shapes.inc<br>discord.py<br><br>現在のユーザー: 3000+<br>LuminaryAI 生成画像:</p>
+                </div>
                 <img id="ai" src="ai.png" alt="LuminaryAI generated image">
             </div>
             </div>
             <div class="accordion-item">
             <h2 class="accordion-header">
                 <button class="accordion-buttons collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree" style="color: aqua;">
-                AIML-chatbot
+                <p id="aiml_english" style="display: none;">AIML-chatbot</p>
+                <p id="aiml_japan">AIMLチャットボット</p>
                 </button>
             </h2>
             <div id="flush-collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
-                <div class="accordion-body" style="color: aqua; text-align: center; ">An "AIML-chatbot" refers to an Artificial Intelligence Markup Language (AIML) based chatbot. It utilizes AIML, an XML-based language, to define patterns and responses for interacting with users. This chatbot interprets and generates human-like responses, making it a powerful tool for natural language processing in various applications. <hr> <br>Used Languages: <br> Python 3.11 <br> AIML 0.9.2<br></div>
+                <div class="accordion-body" style="color: aqua; text-align: center; ">
+                    <p id="desc_aiml_english" style="display: none;">An "AIML-chatbot" refers to an Artificial Intelligence Markup Language (AIML) based chatbot. It utilizes AIML, an XML-based language, to define patterns and responses for interacting with users. This chatbot interprets and generates human-like responses, making it a powerful tool for natural language processing in various applications.<br><br>Used Languages: <br> Python 3.11 <br> AIML 0.9.2<br></p>
+                    <p id="desc_aiml_japan">「AIMLチャットボット」とは、人工知能マークアップ言語(AIML)ベースのチャットボットを指します。XML ベースの言語である AIML を利用して、ユーザーと対話するためのパターンと応答を定義します。このチャットボットは、人間のような応答を解釈して生成するため、さまざまなアプリケーションでの自然言語処理のための強力なツールになります。<br><br>使用言語:<br>python 3.11<br>AIML 0.9.2</p>
+                </div>
             </div>
             </div>
             <div class="accordion-item1" style="border-bottom-left-radius:20px; border-bottom-right-radius: 20px;">
                 <h2 class="accordion-header">
                     <button class="accordion-buttons collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseFour" style="color: aqua; border-radius: 20px;">
-                    My portfolio
+                    <p id="myport_english" style="display: none;">My portfolio</p>
+                    <p id="myport_japan">マイポートフォリオ</p>
                     </button>
                 </h2>
                 <div id="flush-collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
                     <div class="accordion-body" style="color: aqua; text-align: center; ">
-                        "My Portfolio" is a website I created using HTML to present my skills and accomplishments. It includes details about me, such as a profile picture and a list of skills categorized by proficiency. The design is meant to be visually appealing and offers a glimpse into my capabilities and projects. <hr> <br>Used Languages: <br> HTML & CSS <br></div>
+                        <p id="desc_myport_english" style="display: none;">"My Portfolio" is a website I created using HTML to present my skills and accomplishments. It includes details about me, such as a profile picture and a list of skills categorized by proficiency. The design is meant to be visually appealing and offers a glimpse into my capabilities and projects. <br>Used Languages: <br> HTML, CSS & JavaScript <br></p>
+                        <p id="desc_myport_japan">「マイポートフォリオ」は、スキルや成果をHTMLで表現するために作られたウェブサイトです。これには、私のプロフィール写真や習熟度別に分類されたスキルのリストなど、私に関する詳細が含まれています。デザインは視覚的に魅力的で、私の能力とプロジェクトを垣間見ることができます。<br><br>使用言語:<br> HTML, CSS, Javascipt</p>
+                    </div>
                 </div>
             </div>
-            <div class="bottomtext" style="text-align: center; margin-top: 5px; color: aqua;">(click to expand)</div>
+            <div class="bottomtext" style="text-align: center; margin-top: 5px; color: aqua;">
+                <p id="expand_english" style="display: none;">(click to expand)</p>
+                <p id="expand_japan">(クリックで拡大)</p>
+            </div>
         </div>
     </div>
 
     <div class="certificates">
         <div class="certi-head" style="color: aqua; font-size: 30px; text-align: center; padding-bottom: 20px; font-family: Georgia, 'Times New Roman', Times, serif;">
-          <i class="fa-solid fa-wand-magic-sparkles"></i> My certificates
+          <p id="my_certi_english" style="display: none;"><i class="fa-solid fa-wand-magic-sparkles"></i> My certificates</p>
+          <p id="my_certi_japan"><i class="fa-solid fa-wand-magic-sparkles"></i> マイ証明書</p>
         </div>
         <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
           <div class="carousel-indicators">
@@ -282,11 +332,13 @@
         <div class="row">
             <div class="col-lg-6 mx-auto my-3 text-center" id="contact-info">
                 <div class="contact-info-head" style="color: aqua; font-size: 25px; padding: 10px; font-family: Georgia, 'Times New Roman', Times, serif;">
-                    <p><i class="fa-solid fa-address-book"></i> Contact information</p>
+                    <p id="contact_info_english" style="display: none;"><i class="fa-solid fa-address-book"></i> Contact information</p>
+                    <p id="contact_info_japan"><i class="fa-solid fa-address-book"></i> 連絡先</p>
                 </div>
                 <br><br><br>
                 <div class="contact-decs" style="font-size: 19px; font-family:Monospace;">
-                    <h5><i class="fa-solid fa-location-dot"></i> Tokyo, Japan</h5>
+                    <h5 id="location_english" style="display: none;"><i class="fa-solid fa-location-dot"></i> Tokyo, Japan</h5>
+                    <h5 id="location_japan"><i class="fa-solid fa-location-dot"></i> 東京、日本</h5>
                     <h5><i class="fa-solid fa-envelope"></i> anlexalphast@gmail.com</h5>
                     <h5><i class="fa-brands fa-discord"></i> alphast101</h5>
                     <h5><i class="fa-brands fa-github"></i> AlphasT101</h5>
@@ -299,32 +351,217 @@
       
             <div class="col-lg-6 mx-auto my-3 text-center" id="contact-me">
                 <div class="contact-info-head" style="color: aqua; font-size: 25px; padding: 10px; font-family: Georgia, 'Times New Roman', Times, serif;">
-                <p><i class="fa-solid fa-address-book"></i> Contact me</p>
+                <p id="contact_me_english" style="display: none;"><i class="fa-solid fa-address-book"></i> Contact me</p>
+                <p id="contact_me_japan"><i class="fa-solid fa-address-book"></i> お問い合わせ</p>
                 </div>
                 <form action="mailto:anlexalphast@gmail.com" method="post" enctype="text/plain">
                     <div class="mb-3">
-                        <label for="name" class="form-label">Name</label>
-                        <input type="text" class="form-control" id="name" name="name" placeholder="Enter your name" required style="background-color: rgb(39, 58, 110); color: aqua;">
+                        <label for="name" class="form-label">名前 / Name</label>
+                        <input type="text" class="form-control" id="name" name="name" placeholder="あなたの名前を入力してください / Enter your name" required style="background-color: rgb(39, 58, 110); color: aqua;">
                     </div>
                     
                     <div class="mb-3">
-                        <label for="email" class="form-label">Email</label>
-                        <input type="email" class="form-control" id="email" name="email" placeholder="Enter your Email" required style="background-color: rgb(39, 58, 110); color: aqua;">
+                        <label for="email" class="form-label">電子メール / Email</label>
+                        <input type="email" class="form-control" id="email" name="email" placeholder="メールアドレスを入力してください / Enter your Email" required style="background-color: rgb(39, 58, 110); color: aqua;">
                     </div>
                     
                     <div class="mb-3">
-                        <label for="message" class="form-label">Message</label>
-                        <textarea class="form-control" id="message" name="message" placeholder="Enter your message" rows="7" required style="background-color: rgb(39, 58, 110); color: aqua; resize: none;"></textarea>
+                        <label for="message" class="form-label">メッセージ / Message</label>
+                        <textarea class="form-control" id="message" name="message" placeholder="メッセージを入力 / Enter your message" rows="7" required style="background-color: rgb(39, 58, 110); color: aqua; resize: none;"></textarea>
                     </div>
                     
                     <div class="mb-3">
-                        <button type="submit" class="btn btn-outline-success">Submit</button>
-                        <button type="reset" class="btn btn-outline-danger" style="margin-left: 15px;">Reset</button>
+                        <button type="submit" class="btn btn-outline-success">送信 / Submit</button>
+                        <button type="reset" class="btn btn-outline-danger" style="margin-left: 15px;">リセット / Reset</button>
+
                     </div>
                 </form>
             </div>
         </div>
     </div><br>
+
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const switchInput = document.querySelector('.switch input');
+            const legend_english_l = document.getElementById('legend_english_l');
+            const legend_english_r = document.getElementById('legend_english_r');
+            const legend_english_j = document.getElementById('legend_english_j');
+            const legend_japan_l = document.getElementById('legend_japan_l');
+            const legend_japan_r = document.getElementById('legend_japan_r');
+            const legend_japan_j = document.getElementById('legend_japan_j');
+            const bio_japan = document.getElementById('bio_japan');
+            const bio_english = document.getElementById('bio_english');
+            const skills_english = document.getElementById('skills_english');
+            const skills_japan = document.getElementById('skills_japan');
+            const program_lang_english = document.getElementById('program_lang_english');
+            const program_lang_japan = document.getElementById('program_lang_japan');
+            const web_english = document.getElementById('web_english');
+            const web_japan = document.getElementById('web_japan');
+            const discord_english = document.getElementById('discord_english');
+            const discord_japan = document.getElementById('discord_japan');
+            const other_japan = document.getElementById('other_japan');
+            const other_english = document.getElementById('other_english');
+            const additional_english = document.getElementById('additional_english');
+            const additional_japan = document.getElementById('additional_japan');
+            const languages_english = document.getElementById('languages_english');
+            const languages_japan = document.getElementById('languages_japan');
+            const software_english = document.getElementById('software_english');
+            const software_japan = document.getElementById('software_japan');
+            const misc_english = document.getElementById('misc_english');
+            const misc_japan = document.getElementById('misc_japan');
+            const additional_other_english = document.getElementById('additional_other_english');
+            const additional_other_japan = document.getElementById('additional_other_japan');
+            const projects_english = document.getElementById('projects_english');
+            const projects_japan = document.getElementById('projects_japan');
+            const auto_rejector_english = document.getElementById('auto_rejector_english');
+            const auto_rejector_japan = document.getElementById('auto_rejector_japan');
+            const desc_reject_english = document.getElementById('desc_reject_english');
+            const desc_reject_japan = document.getElementById('desc_reject_japan');
+            const luminaryai_english = document.getElementById('luminaryai_english');
+            const luminaryai_japan = document.getElementById('luminaryai_japan');
+            const desc_luminaryai_english = document.getElementById('desc_luminaryai_english');
+            const desc_luminaryai_japan = document.getElementById('desc_luminaryai_japan');
+            const aiml_english = document.getElementById('aiml_english');
+            const aiml_japan = document.getElementById('aiml_japan');
+            const desc_aiml_japan = document.getElementById('desc_aiml_japan');
+            const desc_aiml_english = document.getElementById('desc_aiml_english');
+            const myport_english = document.getElementById('myport_english');
+            const myport_japan = document.getElementById('myport_japan');
+            const desc_myport_english = document.getElementById('desc_myport_english');
+            const desc_myport_japan = document.getElementById('desc_myport_japan');
+            const expand_english = document.getElementById('expand_english');
+            const expand_japan = document.getElementById('expand_japan');
+            const my_certi_english = document.getElementById('my_certi_english');
+            const my_certi_japan = document.getElementById('my_certi_japan');
+            const contact_info_english = document.getElementById('contact_info_english');
+            const contact_info_japan = document.getElementById('contact_info_japan');
+            const contact_me_english = document.getElementById('contact_me_english');
+            const contact_me_japan = document.getElementById('contact_me_japan');
+            const location_english = document.getElementById('location_english');
+            const location_japan = document.getElementById('location_japan');
+
+          switchInput.addEventListener('change', function () {
+            if (this.checked) {
+                legend_english_l.style.display = 'block';
+                legend_english_r.style.display = 'block';
+                legend_english_j.style.display = 'block';
+                bio_english.style.display = 'block';
+                skills_english.style.display = 'block';
+                program_lang_english.style.display = 'block';
+                web_english.style.display = 'block';
+                discord_english.style.display = 'block';
+                other_english.style.display = 'block';
+                additional_english.style.display = 'block';
+                languages_english.style.display = 'block';
+                software_english.style.display = 'block';
+                misc_english.style.display = 'block';
+                additional_other_english.style.display = 'block';
+                projects_english.style.display = 'block';
+                auto_rejector_english.style.display = 'block';
+                desc_reject_english.style.display = 'block';
+                luminaryai_english.style.display = 'block';
+                desc_luminaryai_english.style.display = 'block';
+                aiml_english.style.display = 'block';
+                desc_aiml_english.style.display = 'block';
+                myport_english.style.display = 'block';
+                desc_myport_english.style.display = 'block';
+                expand_english.style.display = 'block';
+                my_certi_english.style.display = 'block';
+                contact_info_english.style.display = 'block';
+                contact_me_english.style.display = 'block';
+                location_english.style.display = 'block';
+
+                legend_japan_l.style.display = 'none';
+                legend_japan_r.style.display = 'none';
+                legend_japan_j.style.display = 'none';
+                bio_japan.style.display = 'none';
+                skills_japan.style.display = 'none';
+                program_lang_japan.style.display = 'none';
+                web_japan.style.display = 'none';
+                discord_japan.style.display = 'none';
+                other_japan.style.display = 'none';
+                additional_japan.style.display = 'none';
+                languages_japan.style.display = 'none';
+                software_japan.style.display = 'none';
+                misc_japan.style.display = 'none';
+                additional_other_japan.style.display = 'none';
+                projects_japan.style.display = 'none';
+                auto_rejector_japan.style.display = 'none';
+                desc_reject_japan.style.display = 'none';
+                luminaryai_japan.style.display = 'none';
+                desc_luminaryai_japan.style.display = 'none';
+                aiml_japan.style.display = 'none';
+                desc_aiml_japan.style.display = 'none';
+                myport_japan.style.display = 'none';
+                desc_myport_japan.style.display = 'none';
+                expand_japan.style.display = 'none';
+                my_certi_japan.style.display = 'none';
+                contact_info_japan.style.display = 'none';
+                contact_me_japan.style.display = 'none';
+                location_japan.style.display = 'none';
+            } else {
+                legend_english_l.style.display = 'none';
+                legend_english_r.style.display = 'none';
+                legend_english_j.style.display = 'none';
+                bio_english.style.display = 'none';
+                skills_english.style.display = 'none';
+                program_lang_english.style.display = 'none';
+                web_english.style.display = 'none';
+                discord_english.style.display = 'none';
+                other_english.style.display = 'none';
+                additional_english.style.display = 'none';
+                languages_english.style.display = 'none';
+                software_english.style.display = 'none';
+                misc_english.style.display = 'none';
+                additional_other_english.style.display = 'none';
+                projects_english.style.display = 'none';
+                auto_rejector_english.style.display = 'none';
+                desc_reject_english.style.display = 'none';
+                luminaryai_english.style.display = 'none';
+                desc_luminaryai_english.style.display = 'none';
+                aiml_english.style.display = 'none';
+                desc_aiml_english.style.display = 'none';
+                myport_english.style.display = 'none';
+                desc_myport_english.style.display = 'none';
+                expand_english.style.display = 'none';
+                my_certi_english.style.display = 'none';
+                contact_info_english.style.display = 'none';
+                contact_me_english.style.display = 'none';
+                location_english.style.display = 'none';
+                
+                legend_japan_l.style.display = 'block';
+                legend_japan_r.style.display = 'block';
+                legend_japan_j.style.display = 'block';
+                bio_japan.style.display = 'block';
+                skills_japan.style.display = 'block';
+                program_lang_japan.style.display = 'block';
+                web_japan.style.display = 'block';
+                discord_japan.style.display = 'block';
+                other_japan.style.display = 'block';
+                additional_japan.style.display = 'block';
+                languages_japan.style.display = 'block';
+                software_japan.style.display = 'block';
+                misc_japan.style.display = 'block';
+                additional_other_japan.style.display = 'block';
+                projects_japan.style.display = 'block';
+                auto_rejector_japan.style.display = 'block';
+                desc_reject_japan.style.display = 'block';
+                luminaryai_japan.style.display = 'block';
+                desc_luminaryai_japan.style.display = 'block';
+                aiml_japan.style.display = 'block';
+                desc_aiml_japan.style.display = 'block';
+                myport_japan.style.display = 'block';
+                desc_myport_japan.style.display = 'block';
+                expand_japan.style.display = 'block';
+                my_certi_japan.style.display = 'block';
+                contact_info_japan.style.display = 'block';
+                contact_me_japan.style.display = 'block';
+                location_japan.style.display = 'block';
+            }
+          });
+        });
+      </script>
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js" integrity="sha384-fbbOQedDUMZZ5KreZpsbe1LCZPVmfTnH7ois6mU1QK+m14rQ1l2bGBq41eYeM/fS" crossorigin="anonymous"></script>
