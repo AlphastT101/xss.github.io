@@ -107,9 +107,10 @@ window.addEventListener('load', function() {
   document.getElementById('main').style.display = 'none';
 });
 
-// Hide the preloader when the page finishes loading
-window.addEventListener('load', function() {
+// Hide the preloader after 1 second delay
+setTimeout(function() {
   document.getElementById('preloader').style.display = 'none';
   document.getElementById('main').style.display = 'block';
-});
+}, 1500); // Adjust the delay as needed (in milliseconds)
+
 

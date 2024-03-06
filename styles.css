@@ -2,10 +2,19 @@
 body, html {
   margin: 0;
   padding: 0;
-  /* width: 100%; */
   height: 100%;
-  background: linear-gradient(-45deg, #003045, #003045, #003045, #003045);
+  /* Replace the gradient with a background image for the parallax effect */
+  background-image: url('https://assets.codepen.io/3319905/internal/screenshots/pens/agGPOO.default.png?fit=cover&format=auto&ha=true&height=540&quality=75&v=2&version=1562123995&width=960');
+  background-attachment: fixed; /* This is essential for the parallax effect */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
   scrollbar-width: none;
+}
+
+/* If you need content to scroll over the background */
+#main {
+  height: 150%; /* Extend the content height to allow scrolling */
 }
   
 :root{
@@ -13,7 +22,9 @@ body, html {
   --red:  #bababa;
 }
 
-
+.main{
+  display: none;
+}
 
 #preloader {
   display: none;
@@ -25,9 +36,7 @@ body, html {
   border-radius: 50%;
   perspective: 800px;
 }
-.main{
-  display: none;
-}
+
 .inner {
   position: absolute;
   box-sizing: border-box;
@@ -142,13 +151,20 @@ body, html {
 
 
 
+
 #bio {
-  color: aqua;;
+  display: flex;
+  justify-content: center;
+  color: aqua;
   font-size: 18px;
   text-align: center;
   max-width: 800px;
-  margin: 10px;
+  border: 9px double rgb(40 91 122);
+  padding: 20px;
+  border-radius: 20px;
 }
+
+
 #legend {
   font-size: 19px;
   animation: colorChange 2.5s infinite;
@@ -162,9 +178,9 @@ body, html {
 }
 .card1
 {
-  background-color: rgb(51 45 86);
+  background-color: rgb(41 33 90);
   width: 380px;
-  height: 700px;
+  height: 730px;
   margin: 30px 15px;
   box-sizing: border-box;
   border-radius: 20px;
@@ -433,7 +449,7 @@ body, html {
   height: 530px;
 }
 #contact {
-  background-color: rgb(0 55 86);
+  background-color: rgb(41 33 90);
   border-radius: 20px;
   width: auto;
   max-width: 1180px;
