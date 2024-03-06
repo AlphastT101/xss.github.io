@@ -15,7 +15,7 @@ body, html {
 
 
 
-.preloader {
+#preloader {
   display: none;
   position: absolute;
   top: calc(50% - 32px);
@@ -25,7 +25,9 @@ body, html {
   border-radius: 50%;
   perspective: 800px;
 }
-
+.main{
+  display: none;
+}
 .inner {
   position: absolute;
   box-sizing: border-box;

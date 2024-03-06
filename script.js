@@ -104,13 +104,12 @@ function getUserGeolocation() {
 // Show the preloader when the page starts loading
 window.addEventListener('load', function() {
   document.getElementById('preloader').style.display = 'block';
+  document.getElementById('main').style.display = 'none';
 });
 
 // Hide the preloader when the page finishes loading
-window.addEventListener('DOMContentLoaded', function() {
-  hidePreloader();
+window.addEventListener('load', function() {
+  document.getElementById('preloader').style.display = 'none';
+  document.getElementById('main').style.display = 'block';
 });
 
-function hidePreloader() {
-  document.getElementById('preloader').style.display = 'none';
-}
