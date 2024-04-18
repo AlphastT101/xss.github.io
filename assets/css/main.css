@@ -1333,7 +1333,7 @@ body.loaded {
 .portfolio-box .portfolio-item {
 	background-color: var(--tj-theme-accent-2);
 	margin-bottom: 4%;
-	padding: 36px 36px 0 36px;
+	padding: 10px 10px 10px 10px;
 	border-radius: 10px;
 	width: 48%;
 }
